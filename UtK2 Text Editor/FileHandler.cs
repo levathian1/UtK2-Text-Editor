@@ -210,7 +210,7 @@ namespace UtK2_Text_Editor
         public void GetCorrespondances()
         {
             // https://stackoverflow.com/a/1212115
-            string fileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\correspondences.json");
+            string fileName = Path.Combine(Path.GetDirectoryName(System.AppContext.BaseDirectory) + "\\correspondences.json");
             using FileStream openStream = File.OpenRead(fileName);
             correspondances = JsonSerializer.Deserialize<Dictionary<string, string>>(openStream);
         }
@@ -218,7 +218,7 @@ namespace UtK2_Text_Editor
         public void GetInvCorrespondances()
         {
             // https://stackoverflow.com/a/1212115
-            string fileName = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location) + "\\inv_correspondance.json");
+            string fileName = Path.Combine(Path.GetDirectoryName(System.AppContext.BaseDirectory) + "\\inv_correspondance.json");
             using FileStream openStream = File.OpenRead(fileName);
             inv_correspondances = JsonSerializer.Deserialize<Dictionary<string, string>>(openStream);
         }
