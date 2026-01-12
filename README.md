@@ -6,3 +6,8 @@ Executables for Windows are available in the releases page. A dotnet 9 runtime i
 
 # Building
 Project is buildable using a dotnet 9 Environment on Windows, with no extra dependencies not available in a standard Desktop runtime. As of now, it is untested on both Linux and MacOS environments. The ROM loader project [available here](https://github.com/levathian1/DSROMLoader) is a required dependency to build and run the project
+
+# Resources used
+- [Tinke](https://github.com/pleonex/tinke)
+- [gbatek](https://problemkaputt.de/gbatek.htm#dscartridgeheader)
+- [.NET documentation](https://learn.microsoft.com/en-gb/dotnet/)
