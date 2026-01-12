@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36121.58 d17.14
+# Visual Studio Version 18
+VisualStudioVersion = 18.1.11312.151 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtK2 Text Editor", "UtK2 Text Editor\UtK2 Text Editor.csproj", "{C162E900-2D75-4443-993D-1BE203095484}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DSRomLoader", "..\..\..\DSRomLoader\DSRomLoader.csproj", "{5FEFFBA0-FF13-1ABC-2632-82F9EE0DC00E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C162E900-2D75-4443-993D-1BE203095484}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C162E900-2D75-4443-993D-1BE203095484}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C162E900-2D75-4443-993D-1BE203095484}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FEFFBA0-FF13-1ABC-2632-82F9EE0DC00E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FEFFBA0-FF13-1ABC-2632-82F9EE0DC00E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FEFFBA0-FF13-1ABC-2632-82F9EE0DC00E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FEFFBA0-FF13-1ABC-2632-82F9EE0DC00E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

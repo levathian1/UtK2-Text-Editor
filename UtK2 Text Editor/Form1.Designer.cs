@@ -33,18 +33,19 @@
             label1 = new Label();
             label2 = new Label();
             button1 = new Button();
-            button2 = new Button();
+            listBox1 = new ListBox();
             SuspendLayout();
             // 
             // displayContent
             // 
             displayContent.AcceptsReturn = true;
             displayContent.AcceptsTab = true;
-            displayContent.Location = new Point(413, 37);
+            displayContent.Location = new Point(549, 37);
             displayContent.Multiline = true;
             displayContent.Name = "displayContent";
             displayContent.ReadOnly = true;
-            displayContent.Size = new Size(363, 401);
+            displayContent.ScrollBars = ScrollBars.Vertical;
+            displayContent.Size = new Size(224, 401);
             displayContent.TabIndex = 0;
             displayContent.WordWrap = false;
             displayContent.TextChanged += textBox1_TextChanged_1;
@@ -53,10 +54,11 @@
             // 
             modifyText.AcceptsReturn = true;
             modifyText.AcceptsTab = true;
-            modifyText.Location = new Point(12, 37);
+            modifyText.Location = new Point(308, 37);
             modifyText.Multiline = true;
             modifyText.Name = "modifyText";
-            modifyText.Size = new Size(341, 401);
+            modifyText.ScrollBars = ScrollBars.Vertical;
+            modifyText.Size = new Size(209, 401);
             modifyText.TabIndex = 1;
             modifyText.WordWrap = false;
             // 
@@ -88,22 +90,22 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // button2
+            // listBox1
             // 
-            button2.Location = new Point(165, 8);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 5;
-            button2.Text = "Load File";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            listBox1.FormattingEnabled = true;
+            listBox1.Location = new Point(12, 37);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(250, 394);
+            listBox1.TabIndex = 6;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             ClientSize = new Size(800, 450);
-            Controls.Add(button2);
+            Controls.Add(listBox1);
             Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -122,6 +124,6 @@
         private Label label1;
         private Label label2;
         private Button button1;
-        private Button button2;
+        private ListBox listBox1;
     }
 }

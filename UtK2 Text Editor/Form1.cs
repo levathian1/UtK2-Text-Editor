@@ -1,3 +1,6 @@
+using Microsoft.VisualBasic.ApplicationServices;
+using System.Diagnostics;
+using System.IO;
 using System.Net.Mime;
 
 namespace UtK2_Text_Editor
@@ -5,12 +8,16 @@ namespace UtK2_Text_Editor
     public partial class Form1 : Form
     {
         //FileDecoder dc = new FileDecoder("C:\\Users\\elarb\\Desktop\\decomp\\utk2\\UtK2 Text Editor\\UtK2 Text Editor\\content\\017E");
-        FileDecoder dc = new FileDecoder();
+        FileHandler dc = new FileHandler();
         FileLoading fileLoading = new FileLoading();
         string currentDir = AppDomain.CurrentDomain.BaseDirectory;
-        public Form1()
+        List<DSRomLoader.FATentry> entries;
+        DSRomLoader.FATentry currentElem;
+        byte[] ROMfile;
+        public Form1(byte[] ROM)
         {
             InitializeComponent();
+            ROMfile = ROM;
             //FileDecoder dc = new FileDecoder("C:\\Users\\elarb\\Desktop\\decomp\\utk2\\UtK2 Text Editor\\UtK2 Text Editor\\content\\017E");
         }
 
@@ -21,6 +28,34 @@ namespace UtK2_Text_Editor
             //modifyText.Text = tmp;
 
             //base.OnLoad(e);
+            listBox1.BeginUpdate();
+            entries = dc.setList(ROMfile);
+
+            foreach (var item in entries)
+            {
+                listBox1.Items.Add(item.name.ToString());
+                //Debug.WriteLine(item.name.ToString());
+            }
+
+            listBox1.EndUpdate();
+        }
+
+        private void listView1_Click(object sender, EventArgs e)
+        {
+            var item = listBox1.SelectedIndex;
+
+            currentElem = entries[item];
+
+            var offset = currentElem.offset;
+            var size = currentElem.size;
+
+            int offset1 = (int)offset;
+            int total = (int)(offset + size);
+
+            var decoded = dc.Decode(ROMfile[offset1..total]);
+
+            displayContent.Text = decoded;
+            modifyText.Text = decoded;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -44,21 +79,37 @@ namespace UtK2_Text_Editor
         private void button1_Click(object sender, EventArgs e)
         {
             string tmp = modifyText.Text;
-            string file = System.IO.Path.Combine(currentDir, "results.bin");
-            dc.Encode(modifyText.Text);
-            displayContent.Text = dc.Decode(Path.GetFullPath(file));
+            Console.WriteLine(currentDir);
+            string file = System.IO.Path.Combine(currentDir, "rom.nds");
+            //Encode(string StrToEncode, byte[] ROM, int startIndex)
+            dc.Encode(modifyText.Text, ROMfile, currentElem.offset, currentElem.size);
+
+            ROMfile = DSRomLoader.Loader.LoadRom("rom.nds");
+
+            var offset = currentElem.offset;
+            var size = currentElem.size;
+
+            int offset1 = (int)offset;
+            int total = (int)(offset + size);
+            displayContent.Text = dc.Decode(ROMfile[offset1..total]);
             //displayContent.Text = modifyText.Text;
         }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var path = fileLoading.LoadFile();
+            var item = listBox1.SelectedIndex;
 
-            var decoded = dc.Decode(path);
+            currentElem = entries[item];
+
+            var offset = currentElem.offset;
+            var size = currentElem.size;
+
+            int offset1 = (int)offset;
+            int total = (int)(offset + size);
+
+            var decoded = dc.Decode(ROMfile[offset1..total]);
 
             displayContent.Text = decoded;
             modifyText.Text = decoded;
         }
-
     }
 }

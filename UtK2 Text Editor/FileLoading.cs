@@ -14,7 +14,7 @@ namespace UtK2_Text_Editor
         {
         }
 
-        public String LoadFile()
+        public static String LoadRom()
         {
             var filePath = string.Empty;
             var fileContent = string.Empty;
@@ -25,7 +25,7 @@ namespace UtK2_Text_Editor
                 openFileDialog.FilterIndex = 2;
                 openFileDialog.RestoreDirectory = true;
 
-                if (openFileDialog.ShowDialog() == DialogResult.OK) // this is probably the "error" that should be checked for loading purposes
+                if (openFileDialog.ShowDialog() == DialogResult.OK) // this is the "error" that should be checked for loading purposes
                 {
                     filePath = openFileDialog.FileName;
 

@@ -7,6 +7,33 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+	<PublishSingleFile>true</PublishSingleFile>
+	<SelfContained>true</SelfContained>
+	<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+	<DebugType>embedded</DebugType>
+
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="correspondences.json" />
+    <None Remove="files.json" />
+    <None Remove="inv_correspondance.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="correspondences.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="files.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="inv_correspondance.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\DSRomLoader\DSRomLoader.csproj" />
+  </ItemGroup>
 
 </Project>
