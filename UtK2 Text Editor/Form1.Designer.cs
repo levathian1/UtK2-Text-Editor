@@ -34,6 +34,7 @@
             label2 = new Label();
             button1 = new Button();
             listBox1 = new ListBox();
+            button2 = new Button();
             SuspendLayout();
             // 
             // displayContent
@@ -99,12 +100,23 @@
             listBox1.TabIndex = 6;
             listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
+            // button2
+            // 
+            button2.Location = new Point(108, 9);
+            button2.Name = "button2";
+            button2.Size = new Size(109, 23);
+            button2.TabIndex = 7;
+            button2.Text = "Dump to CSV";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
             Controls.Add(listBox1);
             Controls.Add(button1);
             Controls.Add(label2);
@@ -125,5 +137,6 @@
         private Label label2;
         private Button button1;
         private ListBox listBox1;
+        private Button button2;
     }
 }
