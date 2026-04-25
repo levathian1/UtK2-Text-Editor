@@ -31,7 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\DSRomLoader\DSRomLoader.csproj" />
+    <ProjectReference Include="..\..\DSRomLoader\DSRomLoader.csproj" />
   </ItemGroup>
 
 </Project>

@@ -111,5 +111,22 @@ namespace UtK2_Text_Editor
             displayContent.Text = decoded;
             modifyText.Text = decoded;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var item = listBox1.SelectedIndex;
+
+            currentElem = entries[item];
+
+            var offset = currentElem.offset;
+            var size = currentElem.size;
+
+            int offset1 = (int)offset;
+            int total = (int)(offset + size);
+
+            var decoded = dc.Decode(ROMfile[offset1..total]);
+
+            CSVDumper.writeToFile(currentElem.name, decoded);
+        }
     }
 }
