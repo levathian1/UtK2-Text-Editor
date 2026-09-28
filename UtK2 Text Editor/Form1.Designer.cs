@@ -28,40 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            displayContent = new TextBox();
-            modifyText = new TextBox();
             label1 = new Label();
             label2 = new Label();
             button1 = new Button();
             listBox1 = new ListBox();
             button2 = new Button();
             SuspendLayout();
-            // 
-            // displayContent
-            // 
-            displayContent.AcceptsReturn = true;
-            displayContent.AcceptsTab = true;
-            displayContent.Location = new Point(549, 37);
-            displayContent.Multiline = true;
-            displayContent.Name = "displayContent";
-            displayContent.ReadOnly = true;
-            displayContent.ScrollBars = ScrollBars.Vertical;
-            displayContent.Size = new Size(224, 401);
-            displayContent.TabIndex = 0;
-            displayContent.WordWrap = false;
-            displayContent.TextChanged += textBox1_TextChanged_1;
-            // 
-            // modifyText
-            // 
-            modifyText.AcceptsReturn = true;
-            modifyText.AcceptsTab = true;
-            modifyText.Location = new Point(308, 37);
-            modifyText.Multiline = true;
-            modifyText.Name = "modifyText";
-            modifyText.ScrollBars = ScrollBars.Vertical;
-            modifyText.Size = new Size(209, 401);
-            modifyText.TabIndex = 1;
-            modifyText.WordWrap = false;
             // 
             // label1
             // 
@@ -121,8 +93,6 @@
             Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(modifyText);
-            Controls.Add(displayContent);
             Name = "Form1";
             Text = "UtK2 Text Editor";
             ResumeLayout(false);
@@ -130,9 +100,6 @@
         }
 
         #endregion
-
-        private TextBox displayContent;
-        private TextBox modifyText;
         private Label label1;
         private Label label2;
         private Button button1;

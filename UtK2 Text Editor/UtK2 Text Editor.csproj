@@ -13,16 +13,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="char_correspondance.json" />
     <None Remove="correspondences.json" />
     <None Remove="files.json" />
+    <None Remove="inv_char_correspondance.json" />
     <None Remove="inv_correspondance.json" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="char_correspondance.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="correspondences.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="files.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="inv_char_correspondance.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="inv_correspondance.json">

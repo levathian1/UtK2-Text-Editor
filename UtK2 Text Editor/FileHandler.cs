@@ -19,12 +19,18 @@ namespace UtK2_Text_Editor
     internal class FileHandler
     {
         private Dictionary<string, String> correspondances;
+        private Dictionary<string, String> char_correspondances;
         private Dictionary<string, String> inv_correspondances;
+        private Dictionary<string, String> inv_char_correspondances;
+
         private FileStream stream;
+
         public FileHandler()
         {
             GetCorrespondances();
+            GetCharCorrespondances();
             GetInvCorrespondances();
+            GetInvCharCorrespondances();
         }
 
         public void Encode(string StrToEncode, byte[] ROM, uint startIndex, uint size)
@@ -136,11 +142,14 @@ namespace UtK2_Text_Editor
             Debug.WriteLine("done encoding");
         }
 
-        public string Decode(byte[] ArrayROM)
+        public Dictionary<String, List<String>> Decode(byte[] ArrayROM)
         {
             int f_hexIN, s_hexIN;
             string results = "";
             String f_res, s_res;
+            String current_char = "null";
+            int changes = 0;
+            Dictionary<String, List<String>> values = new Dictionary<string, List<string>>();
             try
             {
                 for (int i = 0; i < ArrayROM.Length; i++) {
@@ -151,12 +160,29 @@ namespace UtK2_Text_Editor
                     s_res = string.Format("{0:X2}", s_hexIN);
                     if (correspondances.ContainsKey(s_res + f_res))
                     {
-                        results += correspondances[s_res + f_res];
+                        if (correspondances[s_res + f_res] == "."){
+                            Console.WriteLine("ok");
+                        }
+                        if (!values.ContainsKey(current_char + (char)changes)){
+                            values.Add(current_char + (char) changes, new List<string> { correspondances[s_res + f_res]  });
+                        }
+                        else
+                        {
+                            values[current_char + (char)changes] = values[current_char + (char)changes].Append(correspondances[s_res + f_res]).ToList();
+                        }
+                        //results += correspondances[s_res + f_res];
                     }
-                    else
+                    else if (char_correspondances.ContainsKey(s_res + f_res))
                     {
-                        results += $"{{{s_res}}} {{{f_res}}}";
+                        current_char = char_correspondances[s_res + f_res];
+                        values.Add(current_char + (char)changes, new List<string>());
+                        changes += 1;
+                        //results += correspondances[s_res + f_res];
                     }
+                    //else
+                    //{
+                    //    results += $"{{{s_res}}} {{{f_res}}}";
+                    //}
                 }
             }
             catch (Exception e)
@@ -167,7 +193,7 @@ namespace UtK2_Text_Editor
             {
                 Debug.WriteLine("Done decoding file");
             }
-            return results;
+            return values;
         }
 
         public string Decode(string path) {
@@ -215,12 +241,28 @@ namespace UtK2_Text_Editor
             correspondances = JsonSerializer.Deserialize<Dictionary<string, string>>(openStream);
         }
 
+        public void GetCharCorrespondances()
+        {
+            // https://stackoverflow.com/a/1212115
+            string fileName = Path.Combine(Path.GetDirectoryName(System.AppContext.BaseDirectory) + "\\char_correspondance.json");
+            using FileStream openStream = File.OpenRead(fileName);
+            char_correspondances = JsonSerializer.Deserialize<Dictionary<string, string>>(openStream);
+        }
+
         public void GetInvCorrespondances()
         {
             // https://stackoverflow.com/a/1212115
             string fileName = Path.Combine(Path.GetDirectoryName(System.AppContext.BaseDirectory) + "\\inv_correspondance.json");
             using FileStream openStream = File.OpenRead(fileName);
             inv_correspondances = JsonSerializer.Deserialize<Dictionary<string, string>>(openStream);
+        }
+
+        public void GetInvCharCorrespondances()
+        {
+            // https://stackoverflow.com/a/1212115
+            string fileName = Path.Combine(Path.GetDirectoryName(System.AppContext.BaseDirectory) + "\\inv_char_correspondance.json");
+            using FileStream openStream = File.OpenRead(fileName);
+            inv_char_correspondances = JsonSerializer.Deserialize<Dictionary<string, string>>(openStream);
         }
 
         public List<DSRomLoader.FATentry> setList(string path) {

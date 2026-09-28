@@ -2,6 +2,7 @@ using Microsoft.VisualBasic.ApplicationServices;
 using System.Diagnostics;
 using System.IO;
 using System.Net.Mime;
+using System.Reflection.Emit;
 
 namespace UtK2_Text_Editor
 {
@@ -42,20 +43,20 @@ namespace UtK2_Text_Editor
 
         private void listView1_Click(object sender, EventArgs e)
         {
-            var item = listBox1.SelectedIndex;
+            //var item = listBox1.SelectedIndex;
 
-            currentElem = entries[item];
+            //currentElem = entries[item];
 
-            var offset = currentElem.offset;
-            var size = currentElem.size;
+            //var offset = currentElem.offset;
+            //var size = currentElem.size;
 
-            int offset1 = (int)offset;
-            int total = (int)(offset + size);
+            //int offset1 = (int)offset;
+            //int total = (int)(offset + size);
 
-            var decoded = dc.Decode(ROMfile[offset1..total]);
+            //var decoded = dc.Decode(ROMfile[offset1..total]);
 
-            displayContent.Text = decoded;
-            modifyText.Text = decoded;
+            //displayContent.Text = decoded;
+            //modifyText.Text = decoded;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -78,11 +79,11 @@ namespace UtK2_Text_Editor
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string tmp = modifyText.Text;
-            Console.WriteLine(currentDir);
+            //string tmp = modifyText.Text;
+            //Console.WriteLine(currentDir);
             string file = System.IO.Path.Combine(currentDir, "rom.nds");
-            //Encode(string StrToEncode, byte[] ROM, int startIndex)
-            dc.Encode(modifyText.Text, ROMfile, currentElem.offset, currentElem.size);
+            ////Encode(string StrToEncode, byte[] ROM, int startIndex)
+            //dc.Encode(modifyText.Text, ROMfile, currentElem.offset, currentElem.size);
 
             ROMfile = DSRomLoader.Loader.LoadRom("rom.nds");
 
@@ -91,7 +92,34 @@ namespace UtK2_Text_Editor
 
             int offset1 = (int)offset;
             int total = (int)(offset + size);
-            displayContent.Text = dc.Decode(ROMfile[offset1..total]);
+            var tmp1 = dc.Decode(ROMfile[offset1..total]);
+            int h = 50;
+            foreach(KeyValuePair<String, List<string>> item in tmp1)
+            {
+                TextBox tmp_txt = new TextBox();
+                tmp_txt.Text = item.Key.ToString();
+                tmp_txt.Location = new Point(300, h);
+                this.Controls.Add(tmp_txt);
+
+                TextBox tmp_txt2 = new TextBox();
+                tmp_txt2.Text = string.Join("", item.Value);
+                tmp_txt2.Location = new Point(500, h);
+                tmp_txt2.Width = 500;
+                tmp_txt2.Height = 100;
+                //tmp_txt2.WordWrap = true;
+                tmp_txt2.AutoSize = true;
+                tmp_txt2.Multiline = true;
+                tmp_txt2.ScrollBars = ScrollBars.Vertical;
+                this.Controls.Add(tmp_txt2);
+
+                h += 100;
+            }
+
+            //TextBox txt = new TextBox();
+            //txt.Text = "helloo";
+            //txt.Location = new Point(300, 50);
+            //this.Controls.Add(txt);
+            //displayContent.Text
             //displayContent.Text = modifyText.Text;
         }
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -106,27 +134,27 @@ namespace UtK2_Text_Editor
             int offset1 = (int)offset;
             int total = (int)(offset + size);
 
-            var decoded = dc.Decode(ROMfile[offset1..total]);
+            //var decoded = dc.Decode(ROMfile[offset1..total]);
 
-            displayContent.Text = decoded;
-            modifyText.Text = decoded;
+            //displayContent.Text = decoded;
+            //modifyText.Text = decoded;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             var item = listBox1.SelectedIndex;
 
-            currentElem = entries[item];
+            //currentElem = entries[item];
 
-            var offset = currentElem.offset;
-            var size = currentElem.size;
+            //var offset = currentElem.offset;
+            //var size = currentElem.size;
 
-            int offset1 = (int)offset;
-            int total = (int)(offset + size);
+            //int offset1 = (int)offset;
+            //int total = (int)(offset + size);
 
-            var decoded = dc.Decode(ROMfile[offset1..total]);
+            //var decoded = dc.Decode(ROMfile[offset1..total]);
 
-            CSVDumper.writeToFile(currentElem.name, decoded);
+            //CSVDumper.writeToFile(currentElem.name, decoded);
         }
     }
 }
