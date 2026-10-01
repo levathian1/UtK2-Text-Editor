@@ -1,0 +1,277 @@
+1:
+{FFD0} The Republic of Costigar,
+Africa...
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2:
+{FFF4}The internal warfare plaguing the
+people of this country for over a
+decade has finally come to an end.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3:
+{FFF4}However, they continue to struggle
+with attacks by guerilla militants,
+land mines, and refugees en masse.
+Still, the country is slowly
+walking down the path toward
+peace.
+ 
+ 
+ 
+ 
+ 
+4:
+{FFF4}Other countries have begun
+sending aid to Costigar, helping
+to establish medical institutions.
+But the number of doctors needed
+to staff those facilities has
+been hopelessly insufficient...
+ 
+ 
+ 
+ 
+ 
+5:
+{FFF4}Now...
+A doctor named Derek Stiles has
+come to Zakara, one of Costigar's
+many refugee camps, to provide
+medical care to those in need.
+ 
+ 
+ 
+ 
+ 
+ 
+6: 
+{FFF4}In these harsh lands that are ill
+equipped for providing medical
+care, Derek spends every day
+pouring his heart into saving
+those suffering from diseases...
+ 
+ 
+ 
+ 
+ 
+ 
+7:
+{FFF4}{FFD1} {FFF9}{FFC1}{000E}{FFC7}{003C}{FFD9}{0022}{FFE7}{0037}Doctor{0009} His vitals have dropped{0009}
+{FFF4}They're in the red{0009}
+{FFF4}{FFC4}{000F}{FFE9} {FFE7}.Angie, he'll be alright{0009}
+{FFF4}I'm going to continue as is{0009}
+{FFF4}{FFDD} {FFD6} {FFEC} {FFC8} {FFC7}{000A}{FFD0} Derek Stiles, age {00CD}{00D4}{0006}
+A surgical prodigy who
+travels around the world,
+helping patients.
+His employer is the
+international organization
+Caduceus that researches
+and fights epidemics.
+ 
+ 
+ 
+8:
+{FFF4}{FFC7}{000F}{FFD1} {FFC9} We need to stop the bleeding{0009}
+Hand me the forceps{0009}
+{FFF4}{FFE9} {FFE7}{0033}Yes, Doctor{0009}
+{FFF4}{FFD6} {FFEC} {FFC8} {FFC7}{000A}{FFD0} Angie Thompson, age {00CD}{00CF}{0006}
+An elite nurse with an
+International Nursing
+License. She stands on the
+frontline of medical care
+as Derek's trusted partner.
+ 
+ 
+ 
+ 
+ 
+9:
+{FFF4}{FFC7}{000F}{FFD1} {FFC9} {FFE9} {FFE7}.......
+{FFF4}Scissors{0009}
+{FFF4}{FFE9} {FFE7}{0033}Right away{0009}
+{FFF4}{FFE9} {FFE7}.......
+{FFF4}...Alright{0009} The damaged areas are
+treated{0009}
+{FFF4}{FFC1}{000C}{FFDB} {FFC7}{001E}{FFC1}{000C}{FFDB} {FFC7}{001E}{FFC1}{000C}{FFDB} {FFC7}{001E}{FFC1}{000C}{FFDB} {FFE9} {FFE7}{0033}Vitals have recovered as well{0009}
+{FFF4}{FFE9} {FFE7}....Let's close him up{0009}
+{FFF4}{FFC1}{005D}{FFDB} {FFC1}{0075}{FFDB} {FFE9} {FFE7}{017D}Dr. Stiles{0009}
+{FFF4}{FFE9} {FFE7}{0037}We're still operating{0009} Please
+stay outside{0009}
+{FFF4}{FFE9} {FFE7}{017D}I{003C}I'm sorry{0009} But we just received
+word on an emergency patient{0009}
+{FFF4}{FFC4}{0010}{FFE9} {FFE7}.What?
+{FFF4}{FFE9} {FFE7}{017D}The army's patrol unit found a man
+collapsed in a swamp.
+{FFF4}It seems that he was attacked by
+a wild animal, and he's in
+critical condition.
+{FFF4}{FFE9} {FFE7}{0033}What should we do, Doctor?
+{FFF4}We're not done with this
+procedure yet...
+{FFF4}{FFE9} {FFE7}.......
+{FFF4}What about the new doctor who was
+supposed to start today?
+{FFF4}{FFE9} {FFE7}{017D}He hasn't arrived yet. His bus
+must be running late...
+{FFF4}{FFE9} {FFE7}....Alright{0009}
+{FFF4}Angie, I'm counting on you to get
+the emergency patient brought in{0009}
+{FFF4}I'll finish up here by myself.
+{FFF4}{FFC4}{0054}{FFE9} {FFE7}{0033}Understood, Doctor{0009}
+{FFF4}{FFE9} {FFE7}{017D}Ms. Thompson, please follow me{0009}
+{FFF4}{FFD6} {FFC1}{0062}{FFE9} {FFDB} {FFC1}{0075}{FFDB} {FFDF}{003C}{FFD4}  {FFEB} {FFE6}{0010}{FFD3}  {FFC0}.{FFC1}{005B}{FFDB} {FFC1}{005C}{FFDB} {FFD9}{00B8}{FFE7}hSo this is Camp Zakara...
+I'd heard rumors about this place,
+but talk about unsettling...
+{FFF4}Hm, I wonder where the clinic is?
+{FFF4}{FFD6} {FFE9} {FFC1}{0088}{FFDB} {FFE7}{0188}Freeze{0009}
+Stop right there or we'll shoot{0009}
+{FFF4}We have orders to detain anyone
+who looks suspicious{0009}
+{FFF4}{FFE9} {FFE7}kN{003C}No, I'm not a refugee.
+Please, don't shoot...
+{FFF4}{FFCE}hMy name is Adel. Adel Tulba.
+{FFF4}I'm going to be working here as a
+doctor, and today is my first
+day...
+{FFF4}Here's my identification...
+{FFF4}{FFD6} {FFEC} {FFC8} {FFC7}{000A}{FFD0} Adel Tulba, age {00CD}{00D0}{0006}
+A young surgeon from
+Costigar who has just
+finished his medical
+training. Determined
+to restore his country,
+he has been assigned to
+Zakara's medical ward.
+ 
+ 
+ 
+10:
+{FFF4}{FFC7}{000F}{FFD1} {FFC9} {FFE9} {FFE7}{0188}Hand it over{0009}
+{FFF4}Hm, good. Looks like you're a
+doctor alright.
+{FFF4}Welcome aboard. 
+Are you from the Razu Tribe by
+any chance?
+{FFF4}{FFE9} {FFE7}hUm, yes...
+{FFF4}I'm, uh, looking for the clinic...
+{FFF4}{FFE9} {FFE7}{0188}Oh, it's right over{003C}{003C}
+{FFF4}Ah, good timing.
+Here comes an American nurse.
+{FFF4}{FFD6} {FFE9} {FFC0}?{FFC1}{005D}{FFDB} {FFD9}{002D}{FFE7}{0037}We've got an emergency{0009}
+There's an inbound patient who
+needs immediate attention{0009}
+{FFF4}He's being transported right now{0009}
+I need anyone who can assist{0009}
+{FFF4}{FFE9} {FFE7}{0188}Looks like you'll be hitting the
+ground running, Doctor.
+{FFF4}{FFE9} {FFE7}{0037}The patient is suffering from
+multiple wounds and is bleeding
+profusely{0009}
+{FFF4}Dr. Stiles{0009}
+Are you ready to begin treatment{0009}?
+{FFF4}{FFE9} {FFE7}hStiles...?
+{FFF4}{FFD6} {FFE9} {FFC1}{0075}{FFDB} {FFD9}{0014}{FFE7}.Yes, the room's available{0009}
+We'll begin immediately, Angie{0009}
+{FFF4}Our supplies are limited, but
+we're going to have to make do{0009}
+{FFF4}{FFD6} {FFE9} {FFC1}{005B}{FFDB} {FFE7}hDoctor, I can help{0009}
+My name is Adel, and I'm a new
+surgeon here{0009}
+{FFF4}{FFE9} {FFE7} ...Great timing{0009}
+But we'll introduce ourselves
+after this is over{0009}
+{FFF4}{FFCE}.As you can see, we don't have the
+proper equipment in this place.
+I'll need you to support me{0009}
+{FFF4}{FFE9} {FFE7}hYes, sir{0009}
+I'll get changed right away{0009}
+{FFF4}{FFD6} {FFC1}{005E}{FFE9} {FFDB} {FFE7}{0037}The patient has arrived{0009}
+{FFF4}{FFE9} {FFE7}.Alright{0009}
+Let's begin the operation{0009}
+{FFF4}{FFF9}{FFE7}{0033}Let's begin the briefing.
+{FFF4}Our patient is a {00CD}{00D3}{003C}year{003C}old
+Caucasian male, suffering external
+injuries to his left calf.
+{FFF4}He's been identified as a member
+of a criminal organization that
+poaches rhinoceroses.
+{FFF4}Apparently, he was attacked by a
+crocodile when he was walking
+through a river...
+{FFF4}{FFE9} {FFE7}.I guess what goes around comes
+around, huh?
+{FFF4}{FFE9} {FFE7}hI don't have any sympathy for him
+either, Doctor.
+{FFF4}{FFE9} {FFE7}{0033}That may be, but our obligation is
+to give every patient what they
+need, regardless.
+{FFF4}{FFE9} {FFE7}.He's got some large lacerations,
+and it looks like there are some
+fractures too.
+{FFF4}Do you see anything else, Adel?
+{FFF4}{FFE9} {FFE7}hWell, he's bleeding profusely
+from the area where he was
+bitten...
+{FFF4}{FFDA}{00BA}Hm... and the way the bone is
+broken...
+{FFF4}Maybe there's a foreign object
+inside the wound.
+{FFF4}{FFC4}.{FFE9} {FFE7}.You think so...? We'll have to 
+keep that in mind as we operate.
+{FFF4}{FFE9} {FFE7}{0033}Allow me to explain the objectives
+of this operation. They are{0006}
+{FFF4}{0005}Arrest the bleeding and suture
+the external wounds.
+{0005}Reform the fractured bone.
+{FFF4}That's it. Remember, Doctor, we
+have to do our best.
+{FFF4}{FFF9}{FFDA} {FFDC}{000A}Alright. Let's begin the
+operation{0009}
+{FFF4}{FFF9}{FFD9}{00B9}{FFE7}k...Wow{0009} I'm shocked{0009}
+{FFF4}You're incredibly precise,
+and your speed...
+It was simply amazing{0009}
+{FFF4}{FFCE}hI've never seen an operation like
+that, Dr. Stiles{0009}
+{FFF4}{FFE9} {FFE7} It was nothing special...
+Just the result of years of
+practice.
+{FFF4}And your advice was very helpful,
+too.
+{FFF4}{FFE9} {FFE7}hStill, compared to anyone I knew
+back in med school, your abilities
+are far superior{0009}
+{FFF4}But... why would someone like you
+be in a place like this?
+{FFF4}{FFE9} {FFE7} ...It shouldn't surprise you to
+find doctors where there are
+patients, should it?
+{FFF4}Oh, by the way.
+I haven't introduced myself...
+{FFF4}My name is Derek Stiles, and as of
+today, I'm going to be your mentor.
+Nice to meet you, Adel.
+{FFF4}{FFE9} {FFE7}kHuh{0009}? You're going to be my...{0009}?
+{FFF4}{FFC4}{002C}{FFE9} {FFE7}{0032}I'm Angie Thompson, his surgical
+assistant. Nice to meet you.
+{FFF4}We're looking forward to you being
+able to handle these kinds of
+operations soon.
+{FFF4}{FFE9} {FFE7}hOh... Y{003C}Yes{0009} I'll do my best{0009}
+{FFF4}{FFDF}{003C}{FFF9}

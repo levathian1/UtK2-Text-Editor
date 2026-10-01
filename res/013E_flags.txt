@@ -1,0 +1,235 @@
+Block 1: {FFD0} The
+
+Block 2: {FFF4}The
+
+Block 3: {FFF4}However
+
+Block 4: {FFF4}Other
+
+Block 5: {FFF4}Now.
+
+Block 6: {FFF4}In
+
+Block 7:
+{FFF4}{FFD1} {FFF9}{FFC1}{000E}{FFC7}{003C}{FFD9}{0022}{FFE7}
+{0037}Doctor
+{0009} His
+dropped{0009}
+{FFF4}They're
+red{0009}
+{FFF4}{FFC4}{000F}{FFE9} 
+{FFE7}.Angie
+alright{0009}
+{FFF4}I'm
+is{0009}
+{FFF4}{FFDD} {FFD6} {FFEC} {FFC8} {FFC7}{000A}
+{FFD0} Derek
+age {00CD}{00D4}{0006}
+
+Block 8:
+{FFF4}{FFC7}{000F}{FFD1} 
+{FFC9} We
+bleeding{0009}
+forceps{0009}
+{FFF4}{FFE9} {FFE7}{0033}Yes
+Doctor{0009}
+{FFF4}{FFD6} {FFEC} {FFC8} {FFC7}{000A}
+{FFD0} Angie
+age {00CD}{00CF}{0006}
+
+Block 9:
+{FFF4}{FFC7}{000F}{FFD1} {FFC9} {FFE9}
+{FFE7}.
+{FFF4}Scissors{0009}
+{FFF4}{FFE9} {FFE7}
+{0033}Right
+away{0009}
+{FFF4}{FFE9}
+{FFE7}.
+{FFF4}.
+.Alright{0009} The
+treated{0009}
+{FFF4}{FFC1}{000C}{FFDB} {FFC7}{001E}{FFC1}{000C}{FFDB} {FFC7}{001E}{FFC1}{000C}{FFDB} {FFC7}
+{001E}{FFC1}{000C}{FFDB} {FFE9} {FFE7}
+{0033}Vitals
+well{0009}
+{FFF4}{FFE9}
+{FFE7}.
+up{0009}
+{FFF4}{FFC1}{005D}{FFDB} {FFC1}{0075}{FFDB} {FFE9} {FFE7}
+{017D}Dr.
+Stiles{0009}
+{FFF4}{FFE9} {FFE7}
+{0037}We're
+operating{0009}
+outside{0009}
+{FFF4}{FFE9} {FFE7}
+{017D}I
+{003C}I'm
+sorry{0009}
+patient{0009}
+{FFF4}{FFC4}{0010}{FFE9}
+{FFE7}.What?
+{FFF4}{FFE9} {FFE7}
+{017D}The
+{FFF4}It
+{FFF4}{FFE9} {FFE7}
+{0033}What
+{FFF4}We're
+{FFF4}{FFE9} {FFE7}.
+{FFF4}What
+{FFF4}{FFE9} {FFE7}
+{017D}He
+{FFF4}{FFE9}
+{FFE7}.
+Alright{0009}
+{FFF4}Angie
+in{0009}
+{FFF4}I'll
+{FFF4}{FFC4}{0054}{FFE9} {FFE7}
+{0033}Understood
+Doctor{0009}
+{FFF4}{FFE9} {FFE7}
+{017D}Ms. Thompson
+me{0009}
+{FFF4}{FFD6} {FFC1}{0062}{FFE9} {FFDB} {FFC1}{0075}{FFDB} {FFDF}{003C}{FFD4}  {FFEB} {FFE6}
+{0010}{FFD3}  {FFC0}.{FFC1}{005B}{FFDB} {FFC1}{005C}{FFDB} {FFD9}{00B8}
+{FFE7}hSo
+{FFF4}Hm,
+{FFF4}{FFD6} {FFE9} {FFC1}{0088}{FFDB} {FFE7}
+{0188}Freeze{0009}
+shoot{0009}
+{FFF4}We 
+suspicious{0009}
+{FFF4}{FFE9} 
+{FFE7}kN
+{003C}No,
+{FFF4}
+{FFCE}hMy
+{FFF4}I'm
+{FFF4}Here
+{FFF4}{FFD6} {FFEC} {FFC8} {FFC7}{000A}
+{FFD0} Adel Tulba, age {00CD}{00D0}{0006}
+{FFF4}{FFC7}{000F}{FFD1} {FFC9} {FFE9} {FFE7}
+
+Block 10:
+
+{0188}Hand
+over{0009}
+{FFF4}Hm
+{FFF4}Welcome
+{FFF4}{FFE9} 
+{FFE7}hUm,
+{FFF4}I'm
+{FFF4}{FFE9} {FFE7}
+{0188}Oh
+over{003C}{003C}
+{FFF4}Ah
+{FFF4}{FFD6} {FFE9} {FFC0}?{FFC1}{005D}{FFDB} {FFD9}{002D}{FFE7}
+{0037}We've
+emergency{0009}
+attention{0009}
+{FFF4}He's
+now{0009}
+assist{0009}
+{FFF4}{FFE9} {FFE7}
+{0188}Looks
+{FFF4}{FFE9} {FFE7}
+{0037}The
+profusely{0009}
+{FFF4}Dr.
+Stiles{0009}
+treatment{0009}?
+{FFF4}{FFE9}
+{FFE7}hStiles...?
+{FFF4}{FFD6} {FFE9} {FFC1}{0075}{FFDB} {FFD9}{0014}
+{FFE7}.Yes,
+available{0009}
+Angie{0009}
+{FFF4}Our
+do{0009}
+{FFF4}{FFD6} {FFE9} {FFC1}{005B}{FFDB}
+{FFE7}hDoctor
+help{0009}
+here{0009}
+{FFF4}{FFE9}
+{FFE7} .
+timing{0009}
+over{0009}
+{FFF4}
+{FFCE}.As
+me{0009}
+{FFF4}{FFE9}
+{FFE7}hYes,
+sir{0009}
+away{0009}
+{FFF4}{FFD6} {FFC1}{005E}{FFE9} {FFDB} {FFE7}
+{0037}The
+arrived{0009}
+{FFF4}{FFE9}
+{FFE7}.
+Alright{0009}
+operation{0009}
+{FFF4}{FFF9}{FFE7}
+{0033}Let's
+{FFF4}Our
+a {00CD}{00D3}{003C}year{003C}old
+{FFF4}He's
+{FFF4}Apparently
+{FFF4}{FFE9}
+{FFE7}.I
+{FFF4}{FFE9}
+{FFE7}hI
+{FFF4}{FFE9} {FFE7}
+{0033}That
+{FFF4}{FFE9}
+{FFE7}.He's
+{FFF4}
+{FFF4}{FFE9}
+{FFE7}hWell
+{FFF4}{FFDA}
+{00BA}Hm.
+{FFF4}Maybe 
+{FFF4}{FFC4}.{FFE9} 
+{FFE7}.You
+{FFF4}{FFE9} {FFE7}
+{0033}Allow
+are{0006}
+{FFF4}
+{0005}Arrest
+{0005}Reform
+{FFF4}That's
+{FFF4}{FFF9}{FFDA} {FFDC}
+{000A}Alright.
+operation{0009}
+{FFF4}{FFF9}{FFD9}{00B9}
+{FFE7}k
+Wow{0009}
+shocked{0009}
+{FFF4}You're 
+amazing{0009}
+{FFF4}
+{FFCE}hI've
+Stiles{0009}
+{FFF4}{FFE9}
+{FFE7} It
+{FFF4}And
+{FFF4}{FFE9}
+{FFE7}hStill
+superior{0009}
+{FFF4}But
+{FFF4}{FFE9}
+{FFE7} .
+{FFF4}Oh, 
+{FFF4}My
+{FFF4}{FFE9}
+{FFE7}kHuh{0009}
+.{0009}?
+{FFF4}{FFC4}{002C}{FFE9} {FFE7}
+{0032}I'm
+{FFF4}We're
+{FFF4}{FFE9}
+{FFE7}hOh
+Y{003C}Yes{0009}
+best{0009}
+{FFF4}{FFDF}{003C}{FFF9}
