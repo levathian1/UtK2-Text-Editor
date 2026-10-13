@@ -15,6 +15,10 @@ namespace UtK2_Text_Editor
         List<DSRomLoader.FATentry> entries;
         DSRomLoader.FATentry currentElem;
         byte[] ROMfile;
+
+        List<TextBox> charBoxes = new List<TextBox>();
+        List<TextBox> textBoxes = new List<TextBox>();
+
         public Form1(byte[] ROM)
         {
             InitializeComponent();
@@ -77,10 +81,26 @@ namespace UtK2_Text_Editor
             //displayContent.Text = modifyText.Text;
         }
 
+        private void clearBoxes()
+        {
+            foreach (var e in charBoxes)
+            {
+                this.Controls.Remove(e);
+            }
+
+            foreach (var e in textBoxes)
+            {
+                this.Controls.Remove(e);
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             //string tmp = modifyText.Text;
             //Console.WriteLine(currentDir);
+
+            clearBoxes();
+
             string file = System.IO.Path.Combine(currentDir, "rom.nds");
             ////Encode(string StrToEncode, byte[] ROM, int startIndex)
             //dc.Encode(modifyText.Text, ROMfile, currentElem.offset, currentElem.size);
@@ -111,6 +131,9 @@ namespace UtK2_Text_Editor
                 tmp_txt2.Multiline = true;
                 tmp_txt2.ScrollBars = ScrollBars.Vertical;
                 this.Controls.Add(tmp_txt2);
+
+                charBoxes.Add(tmp_txt);
+                textBoxes.Add(tmp_txt2);
 
                 h += 100;
             }
