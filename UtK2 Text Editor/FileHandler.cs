@@ -16,6 +16,19 @@ using System.Reflection;
 
 namespace UtK2_Text_Editor
 {
+
+    internal class CharSpeechStruct {
+
+        internal string charName;
+        internal List<string> text;
+
+        internal CharSpeechStruct(string charName, List<string> text)
+        {
+            this.charName = charName;
+            this.text = text;
+        }
+    }
+
     internal class FileHandler
     {
         private Dictionary<string, String> correspondances;
@@ -142,14 +155,17 @@ namespace UtK2_Text_Editor
             Debug.WriteLine("done encoding");
         }
 
-        public Dictionary<String, List<String>> Decode(byte[] ArrayROM)
+        public List<CharSpeechStruct> Decode(byte[] ArrayROM)
         {
+            List<string> known_chars = new List<string>(); // don't want to iterate over text list every add to figure out if char exists
             int f_hexIN, s_hexIN;
             string results = "";
             String f_res, s_res;
             String current_char = "null";
+            known_chars.Add(current_char + "0");
             int changes = 0;
-            Dictionary<String, List<String>> values = new Dictionary<string, List<string>>();
+            List<CharSpeechStruct> text_list = new List<CharSpeechStruct>();
+            List<string> text = new List<string>();
             try
             {
                 for (int i = 0; i < ArrayROM.Length; i++) {
@@ -158,25 +174,42 @@ namespace UtK2_Text_Editor
                     s_hexIN = ArrayROM[i];
                     f_res = string.Format("{0:X2}", f_hexIN);
                     s_res = string.Format("{0:X2}", s_hexIN);
+
+
                     if (correspondances.ContainsKey(s_res + f_res))
                     {
                         if (correspondances[s_res + f_res] == "."){
                             Console.WriteLine("ok");
                         }
-                        if (!values.ContainsKey(current_char + (char)changes)){
-                            values.Add(current_char + (char) changes, new List<string> { correspondances[s_res + f_res]  });
-                        }
-                        else
-                        {
-                            values[current_char + (char)changes] = values[current_char + (char)changes].Append(correspondances[s_res + f_res]).ToList();
-                        }
+                        //if (!known_chars.Contains(current_char + changes.ToString())){
+
+
+                        //    text.Add(correspondances[s_res + f_res]);
+                        //    text_list.Add(new CharSpeechStruct (current_char + changes.ToString(), text));
+
+
+                        //    //values.Add(current_char + changes.ToString(), new List<string> { correspondances[s_res + f_res]  });
+                        //}
+                        //else
+                        //{
+                            text.Add(correspondances[s_res + f_res]);
+                            //values[current_char + (char)changes] = values[current_char + (char)changes].Append(correspondances[s_res + f_res]).ToList();
+                        //}
                         //results += correspondances[s_res + f_res];
                     }
                     else if (char_correspondances.ContainsKey(s_res + f_res))
                     {
-                        current_char = char_correspondances[s_res + f_res];
-                        values.Add(current_char + (char)changes, new List<string>());
                         changes += 1;
+
+                        text_list.Add(new CharSpeechStruct(current_char + changes.ToString(), text));
+
+                        current_char = char_correspondances[s_res + f_res];
+
+                        known_chars.Add(current_char + changes.ToString());
+
+                        text = new List<string>();
+
+                        //values.Add(current_char + (char)changes, new List<string>());
                         //results += correspondances[s_res + f_res];
                     }
                     //else
@@ -184,6 +217,14 @@ namespace UtK2_Text_Editor
                     //    results += $"{{{s_res}}} {{{f_res}}}";
                     //}
                 }
+
+                // temporary thing to still get all the text while not all of the chars have a known value to find
+                // i want my text 
+                if (known_chars.Count == 1)
+                {
+                    text_list.Add(new CharSpeechStruct("null", text));
+                }
+
             }
             catch (Exception e)
             {
@@ -193,7 +234,7 @@ namespace UtK2_Text_Editor
             {
                 Debug.WriteLine("Done decoding file");
             }
-            return values;
+            return text_list;
         }
 
         public string Decode(string path) {

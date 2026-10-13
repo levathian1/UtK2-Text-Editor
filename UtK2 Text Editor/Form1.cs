@@ -94,15 +94,15 @@ namespace UtK2_Text_Editor
             int total = (int)(offset + size);
             var tmp1 = dc.Decode(ROMfile[offset1..total]);
             int h = 50;
-            foreach(KeyValuePair<String, List<string>> item in tmp1)
+            foreach(CharSpeechStruct item in tmp1)
             {
                 TextBox tmp_txt = new TextBox();
-                tmp_txt.Text = item.Key.ToString();
+                tmp_txt.Text = item.charName;
                 tmp_txt.Location = new Point(300, h);
                 this.Controls.Add(tmp_txt);
 
                 TextBox tmp_txt2 = new TextBox();
-                tmp_txt2.Text = string.Join("", item.Value);
+                tmp_txt2.Text = string.Join("", item.text);
                 tmp_txt2.Location = new Point(500, h);
                 tmp_txt2.Width = 500;
                 tmp_txt2.Height = 100;
